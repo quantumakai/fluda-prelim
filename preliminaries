@@ -1,0 +1,51 @@
+Flutter is an open source framework by Google which can be used to build applications multiple platforms. 
+It is a cross-platform UI toolkit that is designed to allow code reuse across operating systems such as iOS and Android, 
+while also allowing applications to interface directly with underlying platform services. The goal is to enable developers to 
+deliver high-performance apps that feel natural on different platforms, embracing differences where they exist while sharing as 
+much code as possible.
+////////////////////////////////////////////
+//////////////Preliminary Info/////////////
+////////////////////////////////////////////
+Resources For Installing Flutter Sdk (when installing, be sure to take note of your directory you place flutter):
+windows: https://docs.flutter.dev/get-started/install/windows
+macos: https://docs.flutter.dev/get-started/install/macos
+or
+2. git clone https://github.com/flutter/flutter.git -b stable
+Currently, flutter installs WITH the Dart Sdk, so you should not need to install the Dart sdk for flutter. But for other IDEs.
+Resourse For Installing Dart Sdk:
+1. https://dart.dev/get-dart
+////////////////////////////////////////////
+For Android, you should also install Android Studio from:
+////////////////////////////////////////////
+Source with detailed instructions: https://developer.android.com/studio/install
+-note: pay close attention to instructions for installation to ensure proper install
+-After Android Studio installed, add an android emulator in Android Studio, for later use:
+//////////////////////////////////////////////
+Adding A Android Virtual Device (AVD)
+-Using Android Studio
+1. After successfully installing Android Studio
+2. Open Android Studio
+3. Need to access the Android Device Manager (ADM)
+4. After opening ADM, click on button labeled "Create Virtual Device...". It will
+open a Virtual Device Configuration dialog box.
+5. In the far-left column, select the emulator type Category, e.g. Phone
+6. In the next column over, select an emulator that you would like to use: e.g. Pixel 4 (with Play Store)
+7. Then, click "Next". It will open a dialog box with a list of emulator system images, showing
+info like Release Name, API Level.
+8. Allow the default selection, e.g. R, API Level = 30, ABI = x86
+9. With a selected image, click "Next" button. It will take you to another dialog that allows you to provide
+a custom emulator name.
+10. click "Finish", and the emulator will be install at the system level for use with Android Studio, VSC, etc.
+///////////////////////////////////////////
+Adding Flutter to environment variables to run flutter commands from any directory
+Easiest way on windows:
+Open a command terminal and enter:
+rundll32.exe sysdm.cpl,EditEnvironmentVariables 
+add to "path" environment variable path of flutter\bin , e.g. "C:\src\flutter\bin" or where this bin folder is located 
+if dart sdk path is needed, also add it. e.g. add to path "C:\tools\dart-sdk\bin" or wherever this bin folder was placed
+==You likely have to close and reopen any existing console windows for these changes to take effect.===
+=======================
+Source: https://docs.flutter.dev/get-started/install/macos
+On Mac:
+$ export PATH="$PATH:`pwd`/flutter/bin"
+///////////////////////////////////////////
